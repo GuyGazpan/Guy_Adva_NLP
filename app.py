@@ -2,9 +2,9 @@ from tkinter import *
 from tkinter import font
 from chat import get_response, bot_name
 
-BG_GREY = "#ABB2B9"
-BG_COLOR = "#17202A"
-TEXT_COL = "#EAECEE"
+BG_GREY = "#bbac9b"
+BG_COLOR = "#684a36"
+TEXT_COL = "#000000"
 
 FONT = "Arial 14"
 FONT_BOLD = "Arial 13 bold"
@@ -25,7 +25,7 @@ class ChatApp:
 
         # Head label
         head_lable = Label(self.window, bg=BG_COLOR, fg=TEXT_COL,
-                           text="Welcome Aboard", font=FONT_BOLD, pady=10)
+                           text="Welcome To G&A Coffee Rosters", font=FONT_BOLD, pady=10)
         head_lable.place(relwidth=1)
 
         # Small div
@@ -48,7 +48,7 @@ class ChatApp:
         bot_lable.place(relwidth=1, rely=0.825)
 
         # Message box
-        self.msg_box = Entry(bot_lable, bg="#2C3E50", fg=TEXT_COL, font=FONT)
+        self.msg_box = Entry(bot_lable, bg="#cfc2b9", fg=TEXT_COL, font=FONT)
         self.msg_box.place(relwidth=.74, relheight=0.06,
                            rely=0.008, relx=0.011)
         self.msg_box.focus()

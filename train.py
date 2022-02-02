@@ -185,5 +185,7 @@ for x in range(len(y_pred)):
     if real_ans[1] == y_pred[x]:
         hitmark[x] = 1
         TP_counter += 1
-
-print('The Precision of model is: {:.2%}'.format(TP_counter/len(y_pred)))
+print("\n-----------------------------------------")
+print('The Precision of model is: {:.2%}'.format(TP_counter/len(y_pred)),
+      '\nYou may start chatting with John our professional Barista & Roaster')
+print("-----------------------------------------\n")
