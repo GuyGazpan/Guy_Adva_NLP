@@ -1,5 +1,6 @@
 import random
 import json
+from sqlalchemy import null
 import torch
 from model import NeuralNet
 from main import bag_of_words, tokenize
@@ -26,6 +27,7 @@ model.eval()
 
 bot_name = "John"
 
+
 def get_response(msg):
     sentence = tokenize(msg)
     x = bag_of_words(sentence, all_words)
@@ -43,5 +45,4 @@ def get_response(msg):
         for intent in intents["intents"]:
             if tag == intent["tag"]:
                 return random.choice(intent["responses"])
-    return "{Sorry, couldn't understand your request. Please try again."
-
+    return "Sorry, couldn't understand your request. Please try again."
